@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart'
+import 'package:flutter/material.dart';
 
 void main(){
-
+  runApp(MyApp()); //pass core widget to runApp need () or else it would be a type
 }
 
 class MyApp extends StatelessWidget {
-  build(BuildContext context) {
-
+  Widget build(BuildContext context) {
+    return MaterialApp(home: Text('Hello!'),); 
   }
 }
